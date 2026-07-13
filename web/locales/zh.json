@@ -1,7 +1,6 @@
 {
   "login.title": "登录",
   "login.subtitle": "请输入管理密码以继续",
-
   "login.password": "管理密码",
   "login.passwordPlaceholder": "输入密码",
   "login.submit": "登录",
@@ -484,5 +483,6 @@
   "errors.typeSuspended": "封禁",
   "errors.typeOverage": "超额",
   "errors.typeProfile": "配置",
-  "errors.typeUnknown": "未知"
+  "errors.typeUnknown": "未知",
+  "lang.vi": "Tiếng Việt"
 }

@@ -11,7 +11,7 @@
     localStorage.removeItem('admin_login_time');
   }
   let password = sessionStorage.getItem('admin_password') || localStorage.getItem('admin_password') || '';
-  let currentLang = localStorage.getItem('kiro_lang') || 'zh';
+  let currentLang = localStorage.getItem('kiro_lang') || 'vi';
   const dict = { en: null, zh: null };
   let accountsData = [];
   const selectedAccounts = new Set();
@@ -105,7 +105,7 @@
   }
   function t(key, ...args) {
     const active = dict[currentLang] || {};
-    const fallback = dict.zh || {};
+    const fallback = dict.en || {};
     let text = active[key] || fallback[key] || key;
     args.forEach((arg, idx) => { text = text.replace('{' + idx + '}', arg); });
     return text;
